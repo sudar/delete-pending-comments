@@ -6,7 +6,7 @@ Donate link: http://www.amazon.de/gp/registry/24F64AHKD51LY
 Tags: admin, plugin, comments, spam, pending, delete, delete comments, mass delete, mass delete comments
 Requires at least: 2.7
 Tested up to: 2.8.4
-Stable tag: 0.0.1
+Stable tag: 0.0.2
 
 A quick way to delete all pending comments. Useful for victims of spammer attacks. 
 
@@ -50,5 +50,7 @@ Unzip, upload to your plugin directory, enable the plugin and configure it as ne
 None yet.
 
 == Changelog ==
+= 0.0.2 =
+ * Fix initial release
 = 0.0.1 =
  * Initial release
