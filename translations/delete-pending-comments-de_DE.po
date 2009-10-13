@@ -1,0 +1,50 @@
+# German translations for PACKAGE package
+# German messages for PACKAGE.
+# Copyright (C) 2009 Nicolas Kuttler
+# This file is distributed under the same license as the PACKAGE package.
+# Nicolas Kuttler <wp@nicolaskuttler.de>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/delete-pending-comments\n"
+"POT-Creation-Date: 2009-10-11 15:36+0000\n"
+"PO-Revision-Date: 2009-10-11 17:37+0200\n"
+"Last-Translator: Nicolas Kuttler <wp@nicolaskuttler.de>\n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: delete-pending-comments.php:19
+msgid "Delete Pending"
+msgstr "Lösche Unveröffentlichte"
+
+#: delete-pending-comments.php:26 delete-pending-comments.php:43
+msgid "I am sure I want to delete all pending comments and realize this can't be undone"
+msgstr "Ich bin sicher dass ich alle unveröffentlichten Kommentare löschen will und bin mir darüber im klaren dass dies nicht Rückgängig gemacht werden kann"
+
+#: delete-pending-comments.php:27
+msgid "I deleted all pending comments!"
+msgstr "Ich habe alle bisher unveröffentlichten Kommentare gelöscht"
+
+#: delete-pending-comments.php:40
+msgid "You have to type the following text into the form to delete all pending comments"
+msgstr "Du musste den folgenden Text in das Eingabefeld kopieren um alle unveröffenlichten Kommentare zu löschen"
+
+#. Plugin Name of an extension
+msgid "Delete Pending Comments"
+msgstr "Lösche unveröffentlichte Komentare"
+
+#. Plugin URI of an extension
+msgid "http://www.nicolaskuttler.de/wordpress/delete-pending-comments/"
+msgstr ""
+
+#. Author of an extension
+msgid "Nicolas Kuttler"
+msgstr ""
+
+#. Author URI of an extension
+msgid "http://www.nicolaskuttler.de/"
+msgstr ""
