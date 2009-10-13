@@ -4,7 +4,7 @@ Plugin Name: Delete Pending Comments
 Plugin URI: http://www.nkuttler.de/wordpress/delete-pending-comments/
 Author: Nicolas Kuttler
 Author URI: http://www.nkuttler.de/
-Description: 
+Description: A quick way to delete all pending comments. Useful for victims of spammer attacks.
 Version: 0.0.3
 */
 
