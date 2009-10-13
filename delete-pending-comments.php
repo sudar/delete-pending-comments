@@ -5,7 +5,7 @@ Plugin URI: http://www.nicolaskuttler.de/wordpress/delete-pending-comments/
 Author: Nicolas Kuttler
 Author URI: http://www.nicolaskuttler.de/
 Description: 
-Version: 0.0.1
+Version: 0.0.3
 */
 
 add_action( 'init', 'nkdeletepending_init' );
@@ -59,11 +59,14 @@ I was pretty unhappy with the default WordPress tag cloud widget. This one is mo
 <a href="http://www.nkuttler.de/wordpress/nkthemeswitch/">Theme switch</a>:
 I like to tweak my main theme that I use on a variety of blogs. If you have ever done this you know how annoying it can be to break things for visitors of your blog. This plugin allows you to use a different theme than the one used for your visitors when you are logged in.
 <br/>
-<a href="http://www.nkuttler.de/wordpress/zero-conf-mail/">Zero Conf Mail</>:
+<a href="http://www.nkuttler.de/wordpress/zero-conf-mail/">Zero Conf Mail</a>:
 Simple mail contact form, the way I like it. No ajax, no bloat. No configuration necessary, but possible.
 <br/>
 <a href="http://www.nkuttler.de/wordpress/nkmovecomments/">Move WordPress comments</a>:
 This plugin adds a small form to every comment on your blog. The form is only added for admins and allows you to <a href="http://www.nkuttler.de/nkmovecomments/">move comments</a> to a different post/page and to fix comment threading.
+<br/>
+<a href="http://www.nkuttler.de/wordpress/delete-pending-comments">Delete Pending Comments</a>:
+This is a plugin that lets you delete all pending comments at once. Useful for spam victims.
 <br/>
 <a href="http://www.nkuttler.de/wordpress/nksnow/">Snow and more</a>:
 This one lets you see snowflakes, leaves, raindrops, balloons or custom images fall down or float upwards on your blog.
@@ -74,7 +77,6 @@ The name says it all, see fireworks on your blog!
 <a href="http://www.rhymebox.de/blog/rhymebox-widget/">Rhyming widget</a>:
 I wrote a little online <a href="http://www.rhymebox.com/">rhyming dictionary</a>. This is a widget to search it directly from one of your sidebars.
 </p>
- 
 		</div>
 		<?php
 	}
