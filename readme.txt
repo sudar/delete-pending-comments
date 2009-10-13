@@ -1,7 +1,7 @@
 === Delete Pending Comments ===
 Contributors: nkuttler
-Author URI: http://www.nicolaskuttler.de/
-Plugin URI: http://www.nkuttler.de/wordpress/nkdeletepending/
+Author URI: http://www.nkuttler.de/
+Plugin URI: http://www.nkuttler.de/wordpress/delete-pending-comments/
 Donate link: http://www.amazon.de/gp/registry/24F64AHKD51LY
 Tags: admin, plugin, comments, spam, pending, delete, delete comments, mass delete, mass delete comments
 Requires at least: 2.7

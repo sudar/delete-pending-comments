@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: Delete Pending Comments
-Plugin URI: http://www.nicolaskuttler.de/wordpress/delete-pending-comments/
+Plugin URI: http://www.nkuttler.de/wordpress/delete-pending-comments/
 Author: Nicolas Kuttler
-Author URI: http://www.nicolaskuttler.de/
+Author URI: http://www.nkuttler.de/
 Description: 
 Version: 0.0.3
 */
