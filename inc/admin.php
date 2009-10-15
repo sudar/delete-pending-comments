@@ -15,14 +15,14 @@ function nkdeletepending_load_translation_file() {
  *
  * @since 0.1.0
  *
- * @todo check if this is correct
+ * @todo check if the path is correct
  */
 function nkdeletepending_css_admin() { ?>
 	<link rel="stylesheet" href="<?php echo get_bloginfo( 'home' ) . '/' . PLUGINDIR . '/delete-pending-comments/inc/admin.css' ?>" type="text/css" media="all" /> <?php
 }
 
 /**
- * Add admin page
+ * Add admin page and CSS
  */
 function nkdeletepending_add_pages() {
 	$page = add_options_page( __( 'Delete Pending Comments', 'delete-pending-comments' ), __( 'Delete Pending Comments', 'delete-pending-comments' ), 10, 'delete-pending-comments', 'nkdeletepending_options_page');
@@ -37,7 +37,10 @@ function nkdeletepending_options_page() {
 	if ( current_user_can( 'manage_options' ) ) { ?>
 		<div id="nkuttler"> <?php
 		if ( $_POST['nkdeletepending'] ) {
-			function_exists( 'check_admin_referer' ) ? check_admin_referer( 'zero-conf-mail' ) : null;
+			function_exists( 'check_admin_referer' ) ? check_admin_referer( 'delete-pending-comments' ) : null;
+			$nonce = $_REQUEST['_wpnonce'];
+			if ( !wp_verify_nonce( $nonce, 'delete-pending-comments' ) ) die( 'Security check' );
+
 			if ( stripslashes( $_POST['nkdeletepending'] ) == $magic_string ) {
 				echo '<div class="box success">';
 				_e( 'I deleted all pending comments!', 'delete-pending-comments' );
@@ -65,7 +68,7 @@ function nkdeletepending_options_page() {
 		</blockquote>
 	
 		<form action="" method="post">
-			<?php function_exists( 'wp_nonce_field' ) ? wp_nonce_field( 'zero-conf-mail' ) : null; ?>
+			<?php function_exists( 'wp_nonce_field' ) ? wp_nonce_field( 'delete-pending-comments' ) : null; ?>
 			<input name="nkdeletepending" type="text" size="80" >
 			<br />
 			<input type="submit" class="button-primary" value="<?php _e( 'Delete Pending Comments', 'delete-pending-comments' ) ?>">
