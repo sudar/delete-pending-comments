@@ -1,0 +1,56 @@
+#nkuttler {
+	padding:				5mm 1cm;
+}
+p {
+	max-width:				100ex;
+}
+thead {
+	text-align:				center;
+	font-weight:			bold;
+}
+blockquote {
+	font-style:				italic;
+}
+
+.box {
+	margin:					16px 8px;
+	padding:				8px;
+	border-radius:          6px;
+	-moz-border-radius:     6px;
+	-webkit-border-radius:  6px;
+}
+.box div {
+	text-align:				right;
+	font-size:				smaller;
+	clear:					right;
+}
+.box ul {
+	margin:					4px 0;
+}
+.box ul li {
+	margin:					4px 0 0 4px;
+}
+.box .gravatar {
+	float:					right;
+	margin:					8px 0 0 8px;
+	width:					55px;
+	text-align:				center;
+}
+
+.right {
+	float:					right;
+	max-width:				250px;
+}
+
+.error,
+.warn {
+	background-color:		#fdd;
+}
+
+.info {
+	background-color:		#eef;
+}
+
+.success {
+	background-color:		#dfd;
+}

@@ -52,6 +52,8 @@ Unzip, upload to your plugin directory, enable the plugin and configure it as ne
 None yet.
 
 == Changelog ==
+= 0.1.0 =
+ * Improve I18N, styling, layout, readability
 = 0.0.3 =
  * More small fixes
 = 0.0.2 =
