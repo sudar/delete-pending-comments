@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/delete-pending-comments\n"
-"POT-Creation-Date: 2009-10-11 15:36+0000\n"
+"POT-Creation-Date: 2009-10-15 06:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,32 +16,40 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: delete-pending-comments.php:19
-msgid "Delete Pending"
+#. #-#-#-#-#  plugin.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Plugin Name of an extension
+#: inc/admin.php:28 inc/admin.php:58 inc/admin.php:71
+msgid "Delete Pending Comments"
 msgstr ""
 
-#: delete-pending-comments.php:26 delete-pending-comments.php:43
+#: inc/admin.php:36
 msgid ""
 "I am sure I want to delete all pending comments and realize this can't be "
 "undone"
 msgstr ""
 
-#: delete-pending-comments.php:27
+#: inc/admin.php:43
 msgid "I deleted all pending comments!"
 msgstr ""
 
-#: delete-pending-comments.php:40
-msgid ""
-"You have to type the following text into the form to delete all pending "
-"comments"
+#: inc/admin.php:48
+msgid "Please try again. Did you copy the text properly?"
 msgstr ""
 
-#. Plugin Name of an extension
-msgid "Delete Pending Comments"
+#: inc/admin.php:60
+msgid ""
+"You have to type the following text into the form to delete all pending "
+"comments:"
 msgstr ""
 
 #. Plugin URI of an extension
-msgid "http://www.nicolaskuttler.de/wordpress/delete-pending-comments/"
+msgid "http://www.nkuttler.de/wordpress/delete-pending-comments/"
+msgstr ""
+
+#. Description of an extension
+msgid ""
+"A quick way to delete all pending comments. Useful for victims of spammer "
+"attacks."
 msgstr ""
 
 #. Author of an extension
@@ -49,5 +57,5 @@ msgid "Nicolas Kuttler"
 msgstr ""
 
 #. Author URI of an extension
-msgid "http://www.nicolaskuttler.de/"
+msgid "http://www.nkuttler.de/"
 msgstr ""
