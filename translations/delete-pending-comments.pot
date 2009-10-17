@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/delete-pending-comments\n"
-"POT-Creation-Date: 2009-10-15 06:49+0000\n"
+"POT-Creation-Date: 2009-10-17 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #. #-#-#-#-#  plugin.pot (PACKAGE VERSION)  #-#-#-#-#
 #. Plugin Name of an extension
-#: inc/admin.php:28 inc/admin.php:58 inc/admin.php:71
+#: inc/admin.php:28 inc/admin.php:68 inc/admin.php:83
 msgid "Delete Pending Comments"
 msgstr ""
 
@@ -28,18 +28,59 @@ msgid ""
 "undone"
 msgstr ""
 
-#: inc/admin.php:43
+#: inc/admin.php:52
 msgid "I deleted all pending comments!"
 msgstr ""
 
-#: inc/admin.php:48
+#: inc/admin.php:57
 msgid "Please try again. Did you copy the text properly?"
 msgstr ""
 
-#: inc/admin.php:60
+#: inc/admin.php:63
+msgid "It looks like there aren't any pending comments!"
+msgstr ""
+
+#: inc/admin.php:72
 msgid ""
 "You have to type the following text into the form to delete all pending "
 "comments:"
+msgstr ""
+
+#: inc/nkuttler.php:24
+msgid "Do you like this plugin?"
+msgstr ""
+
+#: inc/nkuttler.php:32
+#, php-format
+msgid "<a href=\"%s\">Vote</a> for it"
+msgstr ""
+
+#: inc/nkuttler.php:35
+#, php-format
+msgid "<a href=\"%s\">Visit</a> it's homepage"
+msgstr ""
+
+#: inc/nkuttler.php:38
+#, php-format
+msgid "<a href=\"%s\">Subscribe</a> the feed"
+msgstr ""
+
+#: inc/nkuttler.php:41
+msgid "About the author"
+msgstr ""
+
+#: inc/nkuttler.php:44
+#, php-format
+msgid "My <a href=\"%s\">blog</a>"
+msgstr ""
+
+#: inc/nkuttler.php:47
+#, php-format
+msgid "Subscribe via <a href=\"%s\">RSS</a> or <a href=\"%s\">email</a>"
+msgstr ""
+
+#: inc/nkuttler.php:51
+msgid "My other plugins"
 msgstr ""
 
 #. Plugin URI of an extension
