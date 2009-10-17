@@ -86,7 +86,7 @@ msgstr "Meine anderen plugins"
 
 #. Plugin URI of an extension
 msgid "http://www.nkuttler.de/wordpress/delete-pending-comments/"
-msgstr "http://www.nicolaskuttler.de/wordpress/delete-pending-comments/"
+msgstr "http://www.nicolaskuttler.de/wordpress/losche-alle-unveroffentlichten-kommentare/"
 
 #. Description of an extension
 msgid ""
