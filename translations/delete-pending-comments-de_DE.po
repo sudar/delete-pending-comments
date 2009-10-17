@@ -21,7 +21,7 @@ msgstr ""
 #. Plugin Name of an extension
 #: inc/admin.php:28 inc/admin.php:58 inc/admin.php:71
 msgid "Delete Pending Comments"
-msgstr "Lösche unveröffentlichte Komentare"
+msgstr "Lösche unveröffentlichte Kommentare"
 
 #: inc/admin.php:36
 msgid ""
