@@ -5,7 +5,7 @@ Plugin URI: http://www.nkuttler.de/wordpress/delete-pending-comments/
 Donate link: http://www.amazon.de/gp/registry/24F64AHKD51LY
 Tags: admin, plugin, comments, spam, pending, delete, delete comments, mass delete, mass delete comments
 Requires at least: 2.7
-Tested up to: 2.8.4
+Tested up to: 2.9-rare
 Stable tag: 0.0.3
 
 A quick way to delete all pending comments. Useful for victims of spammer attacks. 
@@ -53,7 +53,7 @@ None yet.
 
 == Changelog ==
 = 0.1.0 =
- * Improve I18N, styling, layout, readability
+ * Improve I18N, styling, layout, readability, add info
 = 0.0.3 =
  * More small fixes
 = 0.0.2 =
