@@ -25,7 +25,7 @@ function nkdeletepending_css_admin() { ?>
  * Add admin page and CSS
  */
 function nkdeletepending_add_pages() {
-	$page = add_options_page( __( 'Delete Pending Comments', 'delete-pending-comments' ), __( 'Delete Pending Comments', 'delete-pending-comments' ), 10, 'delete-pending-comments', 'nkdeletepending_options_page');
+	$page = add_submenu_page( 'edit-comments.php', __( 'Delete Pending Comments', 'delete-pending-comments' ), __( 'Delete Pending Comments', 'delete-pending-comments' ), 10, 'delete-pending-comments', 'nkdeletepending_options_page' );
 	add_action( 'admin_head-' . $page, 'nkdeletepending_css_admin' );
 }
 
@@ -35,27 +35,34 @@ function nkdeletepending_add_pages() {
 function nkdeletepending_options_page() {
 	$magic_string = __("I am sure I want to delete all pending comments and realize this can't be undone", 'delete-pending-comments' );
 	if ( current_user_can( 'manage_options' ) ) { ?>
-		<div id="nkuttler"> <?php
+		<div class="wrap" > <?php
 		if ( $_POST['nkdeletepending'] ) {
-			function_exists( 'check_admin_referer' ) ? check_admin_referer( 'delete-pending-comments' ) : null;
+			#function_exists( 'check_admin_referer' ) ? check_admin_referer( 'delete-pending-comments' ) : null;
 			$nonce = $_REQUEST['_wpnonce'];
 			if ( !wp_verify_nonce( $nonce, 'delete-pending-comments' ) ) die( 'Security check' );
 
-			if ( stripslashes( $_POST['nkdeletepending'] ) == $magic_string ) {
-				echo '<div class="box success">';
-				_e( 'I deleted all pending comments!', 'delete-pending-comments' );
-				echo '</div>';
+			$comments = get_comments( 'status=hold' );
+
+			if ( $comments ) {
+				if ( stripslashes( $_POST['nkdeletepending'] ) == $magic_string ) {
+					foreach ( $comments as $comment ) {
+						wp_delete_comment( $comment->comment_ID );
+					}
+					echo '<div class="updated">';
+					_e( 'I deleted all pending comments!', 'delete-pending-comments' );
+					echo '</div>';
+				}
+				else {
+					echo '<div class="error">';
+					_e( 'Please try again. Did you copy the text properly?', 'delete-pending-comments' );
+					echo '</div>';
+				}
 			}
 			else {
-				echo '<div class="box error">';
-				_e( 'Please try again. Did you copy the text properly?', 'delete-pending-comments' );
+				echo '<div class="error">';
+				_e( 'It looks like there aren\'t any pending comments!', 'delete-pending-comments' );
 				echo '</div>';
 			}
-			$comments = get_comments( 'status=hold' );
-			foreach ( $comments as $comment ) {
-				wp_delete_comment( $comment->comment_ID );
-			}
-			echo '<br/>';
 		} ?>
 
 		<h2><?php _e( 'Delete Pending Comments', 'delete-pending-comments' ) ?></h2>
