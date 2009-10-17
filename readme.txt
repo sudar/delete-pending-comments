@@ -43,7 +43,7 @@ I wrote a little online <a href="http://www.rhymebox.com/">rhyming dictionary</a
 </p>
 
 == Installation ==
-Unzip, upload to your plugin directory, enable the plugin and configure it as needed. If you want to add the widget do that in your dashboard's Design section.
+Unzip, upload to your plugin directory. You can delete the comments under the 'Comments' menu.
 
 == Screenshots ==
 1. The configuration menu.
