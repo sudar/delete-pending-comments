@@ -79,8 +79,9 @@ function nkdeletepending_options_page() {
 		<form action="" method="post">
 			<?php function_exists( 'wp_nonce_field' ) ? wp_nonce_field( 'delete-pending-comments' ) : null; ?>
 			<input name="nkdeletepending" type="text" size="80" >
-			<br />
-			<input type="submit" class="button-primary" value="<?php _e( 'Delete Pending Comments', 'delete-pending-comments' ) ?>">
+			<p class="submit">
+				<input type="submit" class="button-primary" value="<?php _e( 'Delete Pending Comments', 'delete-pending-comments' ) ?>">
+			</p>
 		</form>
 		</div>
 		<?php
