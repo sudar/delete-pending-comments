@@ -6,7 +6,7 @@ Donate link: http://www.amazon.de/gp/registry/24F64AHKD51LY
 Tags: admin, plugin, comments, spam, pending, delete, delete comments, mass delete, mass delete comments
 Requires at least: 2.7
 Tested up to: 2.9-rare
-Stable tag: 0.0.3
+Stable tag: 0.1.0
 
 A quick way to delete all pending comments. Useful for victims of spammer attacks. 
 
@@ -46,7 +46,7 @@ I wrote a little online <a href="http://www.rhymebox.com/">rhyming dictionary</a
 Unzip, upload to your plugin directory. You can delete the comments under the 'Comments' menu.
 
 == Screenshots ==
-1. The configuration menu.
+1. The delete comments page (comments menu).
 
 == Frequently Asked Questions ==
 None yet.
