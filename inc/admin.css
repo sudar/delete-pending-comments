@@ -1,6 +1,4 @@
-#nkuttler {
-	padding:				5mm 1cm;
-}
+/* version 0.0.2 */
 p {
 	max-width:				100ex;
 }
@@ -53,4 +51,7 @@ blockquote {
 
 .success {
 	background-color:		#dfd;
+}
+#clearnone {
+	clear:					none;
 }
