@@ -1,4 +1,4 @@
-/* version 0.0.2 */
+/* version 0.2.1 */
 p {
 	max-width:				80ex;
 }
@@ -11,6 +11,7 @@ blockquote {
 	max-width:				80ex;
 }
 
+.box,
 #nkbox {
 	margin:					16px 8px;
 	padding:				8px;
@@ -18,6 +19,7 @@ blockquote {
 	-moz-border-radius:     6px;
 	-webkit-border-radius:  6px;
 	float:					right;
+	background-color:		#ddf;
 }
 #nkbox div {
 	text-align:				right;
