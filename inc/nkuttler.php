@@ -53,11 +53,5 @@ if ( !function_exists( 'nkuttler021_links' ) ) {
 		</div> <?php
 	}
 }
-// just to be on the safe side
-if ( !function_exists( 'nkuttler_links' ) ) {
-	function nkuttler_links( $plugin ) {
-		nkuttler0_2_1_links( $plugin );
-	}
-}
 
 ?>

@@ -52,6 +52,8 @@ Unzip, upload to your plugin directory. You can delete the comments under the 'C
 None yet.
 
 == Changelog ==
+= 0.1.0.1 =
+ * Add icon by <a href="http://www.famfamfam.com">famfamfam</a> to the <a href="http://planetozh.com/blog/my-projects/wordpress-admin-menu-drop-down-css/">Admin Drop Down Menu</a>.
 = 0.1.0 =
  * Improve I18N, styling, layout, readability, add info
 = 0.0.3 =

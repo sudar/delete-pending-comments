@@ -27,6 +27,20 @@ function nkdeletepending_css_admin() { ?>
 function nkdeletepending_add_pages() {
 	$page = add_submenu_page( 'edit-comments.php', __( 'Delete Pending Comments', 'delete-pending-comments' ), __( 'Delete Pending Comments', 'delete-pending-comments' ), 10, 'delete-pending-comments', 'nkdeletepending_options_page' );
 	add_action( 'admin_head-' . $page, 'nkdeletepending_css_admin' );
+
+	// Add icon
+	add_filter( 'ozh_adminmenu_icon_delete-pending-comments', 'delete_pending_comments_icon' );
+}
+
+/**
+ * Return admin menu icon
+ *
+ * @return string path to icon
+ *
+ * @since 0.1.0.1
+ */
+function delete_pending_comments_icon() {
+	return get_bloginfo( 'home' ) . '/' . PLUGINDIR . '/delete-pending-comments/pics/comment_delete.png';
 }
 
 /**
