@@ -43,13 +43,16 @@ I wrote a little online <a href="http://www.rhymebox.com/">rhyming dictionary</a
 </p>
 
 == Installation ==
-Unzip, upload to your plugin directory. You can delete the comments under the 'Comments' menu.
+Unzip, upload to your plugin directory. You can delete the comments under the top level 'Comments' menu.
 
 == Screenshots ==
 1. The delete comments page (comments menu).
 
 == Frequently Asked Questions ==
-None yet.
+<p>
+Q: How do I delete the pending comments?<br />
+A: The plugin page is located under the top level menu entry "Comments". Copy and paste the text, submit, done.
+</p>
 
 == Changelog ==
 = 0.1.0.1 =
