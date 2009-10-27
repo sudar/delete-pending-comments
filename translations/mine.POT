@@ -1,0 +1,37 @@
+
+#: inc/nkuttler.php:23
+msgid "Do you like this plugin?"
+msgstr ""
+
+#: inc/nkuttler.php:31
+#, php-format
+msgid "<a href=\"%s\">Vote</a> for it"
+msgstr ""
+
+#: inc/nkuttler.php:34
+#, php-format
+msgid "<a href=\"%s\">Visit</a> it's homepage"
+msgstr ""
+
+#: inc/nkuttler.php:37
+#, php-format
+msgid "<a href=\"%s\">Subscribe</a> the feed"
+msgstr ""
+
+#: inc/nkuttler.php:40
+msgid "About the author"
+msgstr ""
+
+#: inc/nkuttler.php:43
+#, php-format
+msgid "My <a href=\"%s\">blog</a>"
+msgstr ""
+
+#: inc/nkuttler.php:46
+#, php-format
+msgid "Subscribe via <a href=\"%s\">RSS</a> or <a href=\"%s\">email</a>"
+msgstr ""
+
+#: inc/nkuttler.php:50
+msgid "My other plugins"
+msgstr ""

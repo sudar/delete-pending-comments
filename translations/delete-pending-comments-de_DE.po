@@ -32,7 +32,7 @@ msgstr "Ich habe alle bisher unveröffentlichten Kommentare gelöscht"
 
 #: inc/admin.php:57
 msgid "Please try again. Did you copy the text properly?"
-msgstr "Versuch es bitte noch ein mal. Hast du den Text vollständig kopiert?"
+msgstr "Versuchen Sie es bitte noch ein mal. Haben Sie den Text vollständig kopiert?"
 
 #: inc/admin.php:63
 msgid "It looks like there aren't any pending comments!"
@@ -43,27 +43,27 @@ msgid ""
 "You have to type the following text into the form to delete all pending "
 "comments:"
 msgstr ""
-"Du musste den folgenden Text in das Eingabefeld kopieren um alle "
+"Sie müssen den folgenden Text in das Eingabefeld kopieren um alle "
 "unveröffenlichten Kommentare zu löschen:"
 
 #: inc/nkuttler.php:24
 msgid "Do you like this plugin?"
-msgstr "Gefällt Dir dieses plugin?"
+msgstr "Gefällt Ihnen dieses plugin?"
 
 #: inc/nkuttler.php:32
 #, php-format
 msgid "<a href=\"%s\">Vote</a> for it"
-msgstr "<a href=\"%s\">Stimm</a> für es ab"
+msgstr "<a href=\"%s\">Stimmen</a> Sie für es ab"
 
 #: inc/nkuttler.php:35
 #, php-format
 msgid "<a href=\"%s\">Visit</a> it's homepage"
-msgstr "<a href=\"%s\">Besuch</a> seine Webseite"
+msgstr "<a href=\"%s\">Besuchen</a> Sie seine Webseite"
 
 #: inc/nkuttler.php:38
 #, php-format
 msgid "<a href=\"%s\">Subscribe</a> the feed"
-msgstr "<a href=\"%s\">Abonniere</a> den feed"
+msgstr "<a href=\"%s\">Abonnieren</a> Sie den feed"
 
 #: inc/nkuttler.php:41
 msgid "About the author"
@@ -78,7 +78,7 @@ msgstr "Mein <a href=\"%s\">Blog</a>"
 #, php-format
 msgid "Subscribe via <a href=\"%s\">RSS</a> or <a href=\"%s\">email</a>"
 msgstr ""
-"Abonniere den <a href=\"%s\">RSS feed</a> (als <a href=\"%s\">E-Mail</a>)"
+"Abonnieren Sie den <a href=\"%s\">RSS feed</a> (als <a href=\"%s\">E-Mail</a>)"
 
 #: inc/nkuttler.php:51
 msgid "My other plugins"
@@ -93,7 +93,7 @@ msgid ""
 "A quick way to delete all pending comments. Useful for victims of spammer "
 "attacks."
 msgstr ""
-"Ein schneller Weg alle unveröffentlichten Kommentare zu veröffentlichen. "
+"Ein schneller Weg alle unveröffentlichten Kommentare zu löschen. "
 "Nützlich für die Opfer von Spam-Angriffen."
 
 #. Author of an extension
