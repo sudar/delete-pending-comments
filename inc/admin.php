@@ -18,7 +18,7 @@ function nkdeletepending_load_translation_file() {
  * @todo check if the path is correct
  */
 function nkdeletepending_css_admin() { ?>
-	<link rel="stylesheet" href="<?php echo get_bloginfo( 'home' ) . '/' . PLUGINDIR . '/delete-pending-comments/inc/admin.css' ?>" type="text/css" media="all" /> <?php
+	<link rel="stylesheet" href="<?php echo get_bloginfo( 'home' ) . '/' . PLUGINDIR . '/delete-pending-comments/css/admin.css' ?>" type="text/css" media="all" /> <?php
 }
 
 /**
@@ -40,7 +40,7 @@ function nkdeletepending_add_pages() {
  * @since 0.1.0.1
  */
 function delete_pending_comments_icon() {
-	return get_bloginfo( 'home' ) . '/' . PLUGINDIR . '/delete-pending-comments/pics/comment_delete.png';
+	return get_bloginfo( 'home' ) . '/' . PLUGINDIR . '/delete-pending-comments/pic/comment_delete.png';
 }
 
 /**
