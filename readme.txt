@@ -6,7 +6,7 @@ Donate link: http://www.amazon.de/gp/registry/24F64AHKD51LY
 Tags: admin, plugin, comments, spam, pending, delete, delete comments, mass delete, mass delete comments
 Requires at least: 2.7
 Tested up to: 2.9-rare
-Stable tag: 0.1.1
+Stable tag: 0.1.1.1
 
 A quick way to delete all pending comments. Useful for victims of spammer attacks. 
 
@@ -55,6 +55,8 @@ A: The plugin page is located under the top level menu entry "Comments". Copy an
 </p>
 
 == Changelog ==
+= 0.1.1.1 =
+ * Fix version number...
 = 0.1.1 =
  * Add icon by <a href="http://www.famfamfam.com">famfamfam</a> to the <a href="http://planetozh.com/blog/my-projects/wordpress-admin-menu-drop-down-css/">Admin Drop Down Menu</a>.
  * Re-organize files
