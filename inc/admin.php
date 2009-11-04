@@ -55,13 +55,24 @@ function nkdeletepending_options_page() {
 			$nonce = $_REQUEST['_wpnonce'];
 			if ( !wp_verify_nonce( $nonce, 'delete-pending-comments' ) ) die( 'Security check' );
 
-			$comments = get_comments( 'status=hold' );
+			// Limit. Timeout with 10k comments...
+			// We only need this to see if there are any pending anyway
+			$comments = get_comments( 'status=hold&number=1' );
 
 			if ( $comments ) {
 				if ( stripslashes( $_POST['nkdeletepending'] ) == $magic_string ) {
+
+					/* This was waaaay to slow with 10k+ comments
+					/*
 					foreach ( $comments as $comment ) {
 						wp_delete_comment( $comment->comment_ID );
 					}
+					*/
+					global $wpdb;
+					$wpdb->query( 
+						$wpdb->prepare( "DELETE FROM $wpdb->comments WHERE comment_approved = 0" )
+					);
+
 					echo '<div class="updated">';
 					_e( 'I deleted all pending comments!', 'delete-pending-comments' );
 					echo '</div>';
