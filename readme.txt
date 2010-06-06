@@ -2,7 +2,7 @@
 Contributors: nkuttler
 Author URI: http://www.nkuttler.de/
 Plugin URI: http://www.nkuttler.de/wordpress/delete-pending-comments/
-Donate link: http://www.amazon.de/gp/registry/24F64AHKD51LY
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=11041772
 Tags: admin, plugin, comments, spam, pending, delete, delete comments, mass delete, mass delete comments
 Requires at least: 2.7
 Tested up to: 2.9-rare
