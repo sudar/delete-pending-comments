@@ -90,9 +90,8 @@ function nkdeletepending_options_page() {
 			}
 		} ?>
 
-		<h2><?php _e( 'Delete Pending Comments', 'delete-pending-comments' ) ?></h2> <?php
-		require_once( 'nkuttler.php' );
-		nkuttler0_2_1_links( 'delete-pending-comments' ); ?>
+		<h2><?php _e( 'Delete Pending Comments', 'delete-pending-comments' ) ?></h2>
+
 		<p>
 			<?php _e( 'You have to type the following text into the form to delete all pending comments:', 'delete-pending-comments' ); ?>
 		</p>
