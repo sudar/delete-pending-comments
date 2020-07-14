@@ -72,6 +72,11 @@ function nkdeletepending_options_page() {
 					$wpdb->query( 
 						$wpdb->prepare( "DELETE FROM $wpdb->comments WHERE comment_approved = 0" )
 					);
+					$deleted_comment_ids = wp_list_pluck( $comments, 'comment_ID' );
+					clean_comment_cache( $deleted_comment_ids );
+					foreach ( $deleted_comment_ids as $comment_id ) {
+						do_action( 'wp_set_comment_status', $comment_id, 'delete' );
+					}
 
 					echo '<div class="updated">';
 					_e( 'I deleted all pending comments!', 'delete-pending-comments' );
