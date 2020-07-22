@@ -18,7 +18,7 @@ function nkdeletepending_load_translation_file() {
  * @todo check if the path is correct
  */
 function nkdeletepending_css_admin() { ?>
-	<link rel="stylesheet" href="<?php echo get_bloginfo( 'home' ) . '/' . PLUGINDIR . '/delete-pending-comments/css/admin.css' ?>" type="text/css" media="all" /> <?php
+	<link rel="stylesheet" href="<?php echo get_bloginfo( 'url' ) . '/' . PLUGINDIR . '/delete-pending-comments/css/admin.css' ?>" type="text/css" media="all" /> <?php
 }
 
 /**
