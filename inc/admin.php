@@ -25,7 +25,7 @@ function nkdeletepending_css_admin() { ?>
  * Add admin page and CSS
  */
 function nkdeletepending_add_pages() {
-	$page = add_submenu_page( 'edit-comments.php', __( 'Delete Pending Comments', 'delete-pending-comments' ), __( 'Delete Pending Comments', 'delete-pending-comments' ), 10, 'delete-pending-comments', 'nkdeletepending_options_page' );
+	$page = add_submenu_page( 'edit-comments.php', __( 'Delete Pending Comments', 'delete-pending-comments' ), __( 'Delete Pending Comments', 'delete-pending-comments' ), 'manage_options', 'delete-pending-comments', 'nkdeletepending_options_page' );
 	add_action( 'admin_head-' . $page, 'nkdeletepending_css_admin' );
 
 	// Add icon
