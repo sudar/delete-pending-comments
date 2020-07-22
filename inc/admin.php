@@ -50,7 +50,7 @@ function nkdeletepending_options_page() {
 	$magic_string = __("I am sure I want to delete all pending comments and realize this can't be undone", 'delete-pending-comments' );
 	if ( current_user_can( 'manage_options' ) ) { ?>
 		<div class="wrap" > <?php
-		if ( $_POST['nkdeletepending'] ) {
+		if ( isset( $_POST['nkdeletepending'] ) ) {
 			#function_exists( 'check_admin_referer' ) ? check_admin_referer( 'delete-pending-comments' ) : null;
 			$nonce = $_REQUEST['_wpnonce'];
 			if ( !wp_verify_nonce( $nonce, 'delete-pending-comments' ) ) die( 'Security check' );
