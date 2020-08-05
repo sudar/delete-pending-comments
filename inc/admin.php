@@ -48,35 +48,22 @@ function delete_pending_comments_icon() {
  */
 function nkdeletepending_options_page() {
 	$magic_string = __("I am sure I want to delete all pending comments and realize this can't be undone", 'delete-pending-comments' );
-	if ( current_user_can( 'manage_options' ) ) { ?>
+	if ( current_user_can( 'manage_options' ) ) {
+		global $wpdb;
+		$pending_comment_ids = $wpdb->get_col( "SELECT comment_ID FROM $wpdb->comments WHERE comment_approved = 0" );
+
+		$pending_comments_count = count( $pending_comment_ids ); ?>
+
 		<div class="wrap" > <?php
 		if ( isset( $_POST['nkdeletepending'] ) ) {
-			#function_exists( 'check_admin_referer' ) ? check_admin_referer( 'delete-pending-comments' ) : null;
 			$nonce = $_REQUEST['_wpnonce'];
 			if ( !wp_verify_nonce( $nonce, 'delete-pending-comments' ) ) die( 'Security check' );
 
-			// Limit. Timeout with 10k comments...
-			// We only need this to see if there are any pending anyway
-			$comments = get_comments( 'status=hold&number=1' );
-
-			if ( $comments ) {
+			if ( $pending_comments_count > 0 ) {
 				if ( stripslashes( $_POST['nkdeletepending'] ) == $magic_string ) {
 
-					/* This was waaaay to slow with 10k+ comments
-					/*
-					foreach ( $comments as $comment ) {
-						wp_delete_comment( $comment->comment_ID );
-					}
-					*/
 					global $wpdb;
-					$wpdb->query( 
-						$wpdb->prepare( "DELETE FROM $wpdb->comments WHERE comment_approved = 0" )
-					);
-					$deleted_comment_ids = wp_list_pluck( $comments, 'comment_ID' );
-					clean_comment_cache( $deleted_comment_ids );
-					foreach ( $deleted_comment_ids as $comment_id ) {
-						do_action( 'wp_set_comment_status', $comment_id, 'delete' );
-					}
+					$wpdb->query( "DELETE FROM $wpdb->comments WHERE comment_approved = 0" );
 
 					echo '<div class="updated">';
 					_e( 'I deleted all pending comments!', 'delete-pending-comments' );
@@ -97,21 +84,32 @@ function nkdeletepending_options_page() {
 
 		<h2><?php _e( 'Delete Pending Comments', 'delete-pending-comments' ) ?></h2>
 
-		<p>
-			<?php _e( 'You have to type the following text into the form to delete all pending comments:', 'delete-pending-comments' ); ?>
-		</p>
-
-		<blockquote>
-			<?php echo $magic_string ?>
-		</blockquote>
-	
-		<form action="" method="post">
-			<?php function_exists( 'wp_nonce_field' ) ? wp_nonce_field( 'delete-pending-comments' ) : null; ?>
-			<input name="nkdeletepending" type="text" size="80" >
-			<p class="submit">
-				<input type="submit" class="button-primary" value="<?php _e( 'Delete Pending Comments', 'delete-pending-comments' ) ?>">
+		<?php if ( $pending_comments_count > 0 ): ?>
+			<p>
+				<?php printf( __( 'You have %u pending comments in your site. Do you want to delete them?', 'delete-pending-comments' ), $pending_comments_count ); ?>
 			</p>
-		</form>
+
+			<p>
+				<?php _e( 'You have to type the following text into the form to delete all pending comments:', 'delete-pending-comments' ); ?>
+			</p>
+
+			<blockquote>
+				<?php echo $magic_string ?>
+			</blockquote>
+
+			<form action="" method="post">
+				<?php function_exists( 'wp_nonce_field' ) ? wp_nonce_field( 'delete-pending-comments' ) : null; ?>
+				<input name="nkdeletepending" type="text" size="80" >
+				<p class="submit">
+					<input type="submit" class="button-primary" value="<?php _e( 'Delete Pending Comments', 'delete-pending-comments' ) ?>">
+				</p>
+			</form>
+		<?php endif; ?>
+		<?php if ( 0 === $pending_comments_count ): ?>
+			<p>
+				<?php _e( 'No pending comments available.', 'delete-pending-comments' ); ?>
+			</p>
+		<?php endif; ?>
 		</div>
 		<?php
 	}
