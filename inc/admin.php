@@ -11,38 +11,10 @@ function nkdeletepending_load_translation_file() {
 }
 
 /**
- * Load admin CSS style
- *
- * @since 0.1.0
- *
- * @todo  check if the path is correct
- */
-function nkdeletepending_css_admin() { ?>
-	<link rel="stylesheet"
-	      href="<?php echo get_bloginfo( 'url' ) . '/' . PLUGINDIR . '/delete-pending-comments/css/admin.css' ?>"
-	      type="text/css" media="all"/> <?php
-}
-
-/**
- * Add admin page and CSS
+ * Add admin page.
  */
 function nkdeletepending_add_pages() {
-	$page = add_submenu_page( 'edit-comments.php', __( 'Delete Pending Comments', 'delete-pending-comments' ), __( 'Delete Pending Comments', 'delete-pending-comments' ), 'manage_options', 'delete-pending-comments', 'nkdeletepending_options_page' );
-	add_action( 'admin_head-' . $page, 'nkdeletepending_css_admin' );
-
-	// Add icon
-	add_filter( 'ozh_adminmenu_icon_delete-pending-comments', 'delete_pending_comments_icon' );
-}
-
-/**
- * Return admin menu icon
- *
- * @return string path to icon
- *
- * @since 0.1.0.1
- */
-function delete_pending_comments_icon() {
-	return get_bloginfo( 'home' ) . '/' . PLUGINDIR . '/delete-pending-comments/pic/comment_delete.png';
+	add_submenu_page( 'edit-comments.php', __( 'Delete Pending Comments', 'delete-pending-comments' ), __( 'Delete Pending Comments', 'delete-pending-comments' ), 'manage_options', 'delete-pending-comments', 'nkdeletepending_options_page' );
 }
 
 /**
