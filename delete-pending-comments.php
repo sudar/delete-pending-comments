@@ -1,13 +1,16 @@
 <?php
-/*
-Plugin Name: Delete Pending Comments
-Plugin URI: http://www.nkuttler.de/wordpress/delete-pending-comments/
-Author: Nicolas Kuttler
-Author URI: http://www.nkuttler.de/
-Description: A quick way to delete all pending comments. Useful for victims of spammer attacks.
-Version: 0.2.1.2
-Text Domain: delete-pending-comments
-*/
+/**
+ * Plugin Name: Delete Pending Comments
+ * Plugin URI: https://bulkwp.com
+ * Author: sudar
+ * Author URI: https://sudarmuthu.com/
+ * Description: A quick way to delete all pending and spam comments. Useful for victims of spammer attacks.
+ * Version: 1.0.0
+ * Text Domain: delete-pending-comments
+ * Domain Path: translations/
+ * === RELEASE NOTES ===
+ * Check readme file for full release notes.
+ */
 
 /**
  * Check if we are in admin
@@ -22,5 +25,3 @@ function nkdeletepending_load() {
 	}
 }
 nkdeletepending_load();
-
-?>

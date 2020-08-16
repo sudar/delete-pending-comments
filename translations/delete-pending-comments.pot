@@ -1,102 +1,68 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Nicolas Kuttler
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Copyright (C) 2020 sudar
+# This file is distributed under the same license as the Delete Pending Comments package.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/delete-pending-comments\n"
-"POT-Creation-Date: 2009-10-17 10:09+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Project-Id-Version: Delete Pending Comments 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/delete-pending-comments\n"
+"POT-Creation-Date: 2020-08-16 07:23:53+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
-"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
 
-#. #-#-#-#-#  plugin.pot (PACKAGE VERSION)  #-#-#-#-#
-#. Plugin Name of an extension
-#: inc/admin.php:28 inc/admin.php:68 inc/admin.php:83
+#. Plugin Name of the plugin/theme
 msgid "Delete Pending Comments"
 msgstr ""
 
-#: inc/admin.php:36
+#: inc/admin.php:26
 msgid ""
 "I am sure I want to delete all pending comments and realize this can't be "
 "undone"
 msgstr ""
 
-#: inc/admin.php:52
-msgid "I deleted all pending comments!"
+#: inc/admin.php:50
+msgid "All pending and spam comments are deleted successfully from your site."
 msgstr ""
 
-#: inc/admin.php:57
+#: inc/admin.php:58
 msgid "Please try again. Did you copy the text properly?"
 msgstr ""
 
-#: inc/admin.php:63
-msgid "It looks like there aren't any pending comments!"
-msgstr ""
+#: inc/admin.php:73
+msgid "You have %s pending comment in your site. Do you want to delete it?"
+msgid_plural ""
+"You have %s pending comments in your site. Do you want to delete all of "
+"them?"
+msgstr[0] ""
+msgstr[1] ""
 
-#: inc/admin.php:72
+#: inc/admin.php:85
 msgid ""
-"You have to type the following text into the form to delete all pending "
-"comments:"
+"You have to type the following text into the textbox to delete all the "
+"pending comments:"
 msgstr ""
 
-#: inc/nkuttler.php:24
-msgid "Do you like this plugin?"
+#: inc/admin.php:106
+msgid "There are no pending or spam comments in your site."
 msgstr ""
 
-#: inc/nkuttler.php:32
-#, php-format
-msgid "<a href=\"%s\">Vote</a> for it"
+#. Plugin URI of the plugin/theme
+msgid "https://bulkwp.com"
 msgstr ""
 
-#: inc/nkuttler.php:35
-#, php-format
-msgid "<a href=\"%s\">Visit</a> it's homepage"
-msgstr ""
-
-#: inc/nkuttler.php:38
-#, php-format
-msgid "<a href=\"%s\">Subscribe</a> the feed"
-msgstr ""
-
-#: inc/nkuttler.php:41
-msgid "About the author"
-msgstr ""
-
-#: inc/nkuttler.php:44
-#, php-format
-msgid "My <a href=\"%s\">blog</a>"
-msgstr ""
-
-#: inc/nkuttler.php:47
-#, php-format
-msgid "Subscribe via <a href=\"%s\">RSS</a> or <a href=\"%s\">email</a>"
-msgstr ""
-
-#: inc/nkuttler.php:51
-msgid "My other plugins"
-msgstr ""
-
-#. Plugin URI of an extension
-msgid "http://www.nkuttler.de/wordpress/delete-pending-comments/"
-msgstr ""
-
-#. Description of an extension
+#. Description of the plugin/theme
 msgid ""
-"A quick way to delete all pending comments. Useful for victims of spammer "
-"attacks."
+"A quick way to delete all pending and spam comments. Useful for victims of "
+"spammer attacks."
 msgstr ""
 
-#. Author of an extension
-msgid "Nicolas Kuttler"
+#. Author of the plugin/theme
+msgid "sudar"
 msgstr ""
 
-#. Author URI of an extension
-msgid "http://www.nkuttler.de/"
+#. Author URI of the plugin/theme
+msgid "https://sudarmuthu.com/"
 msgstr ""
