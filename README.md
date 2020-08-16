@@ -70,7 +70,7 @@ The success message that is shown after the comments are deleted.
 ### 0.1.1.1 ###
  * Fix version number...
 ### 0.1.1 ###
- * Add icon by <a href###"http://www.famfamfam.com">famfamfam</a> to the <a href###"http://planetozh.com/blog/my-projects/wordpress-admin-menu-drop-down-css/">Admin Drop Down Menu</a>.
+ * Add icon by <a href"http://www.famfamfam.com">famfamfam</a> to the <a href"http://planetozh.com/blog/my-projects/wordpress-admin-menu-drop-down-css/">Admin Drop Down Menu</a>.
  * Re-organize files
 ### 0.1.0 ###
  * Improve I18N, styling, layout, readability, add info
