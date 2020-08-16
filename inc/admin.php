@@ -86,7 +86,9 @@ function nkdeletepending_options_page() {
 			</p>
 
 			<blockquote>
-				<?php echo $magic_string ?>
+				<em>
+					<?php echo $magic_string ?>
+				</em>
 			</blockquote>
 
 			<form action="" method="post">
