@@ -7,7 +7,7 @@
  * Description: A quick way to delete all pending and spam comments. Useful for victims of spammer attacks.
  * Version: 1.0.0
  * Text Domain: delete-pending-comments
- * Domain Path: languages/
+ * Domain Path: translations/
  * === RELEASE NOTES ===
  * Check readme file for full release notes.
  */
