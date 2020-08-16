@@ -1,30 +1,60 @@
 === Delete Pending Comments ===
-
-Contributors: nkuttler
-Author URI: http://www.kuttler.eu/
-Plugin URI: http://kuttler.eu/wordpress-plugin/delete-pending-comments/
-Donate link: http://www.kuttler.eu/donations/
-Tags: admin, plugin, comments, spam, pending, delete, delete comments, mass delete, mass delete comments
+Contributors: sudar
+Tags: comments, spam, pending, delete, mass delete comments
+Requires PHP: 5.3
 Requires at least: 2.7
-Tested up to: 3.5
-Stable tag: 0.2.1.2
+Tested up to: 5.5
+Stable tag: 1.0.0
 
-A quick way to delete all pending comments. Useful for victims of spammer attacks.
+A quick way to delete all pending and spam comments. Useful for victims of spammer attacks.
 
 == Description ==
-This plugin is a quick way to delete all pending comments. It's useful for victims of spammer attacks.
+This plugin is a quick way to delete all pending and spam comments. It's useful for victims of spammer attacks.
+
+After installing the plugin go to Comments -> Delete Pending Comments and follow the instructions to delete all the pending comments.
+
+== Credits ==
+
+This plugin was originally developed by [Nicolas Kuttler](http://www.nkuttler.de/) and he maintained it till June 24, 2020.
+
+From June 24, 2020, [Sudar Muthu](https://sudarmuthu.com) took over the development and maintenance of the plugin.
 
 == Installation ==
-Unzip, upload to your plugin directory. You can delete the comments under the top level 'Comments' menu.
+### From WordPress Admin
+You can install the plugin directly from WordPress admin interface by going to Plugins -> Add New and then searching for 'Delete Pending Comments' plugin.
 
-== Screenshots ==
-1. The delete comments page (comments menu).
+### Normal WordPress installations
+Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.
 
 == Frequently Asked Questions ==
-Q: How do I delete the pending comments?<br />
-A: The plugin page is located under the top level menu entry "Comments". Copy and paste the text, submit, done.
+
+### How do I delete the pending comments?
+
+Go to Comments -> Delete Pending Comments and follow the instructions to delete all the pending or spam comments.
+
+### Can the plugin also delete all spam comments?
+
+Yes, the plugin can delete both pending and spam comments.
+
+### Is there a way to retrieve the comments that were deleted?
+
+No. There is no way to retrieve the comments that were deleted. So please take a backup if you need to restore the deleted comments.
+
+== Screenshots ==
+
+1. Go to Comments -> Delete Pending Comments to see the list of pending comments.
+
+2. Type the text that is shown to confirm the deletion of all pending comments.
+
+3. The success message that is shown after the comments are deleted.
 
 == Changelog ==
+= 1.0.0 =
+ * Added support for PHP 5.3 to 7.4
+ * Added support for WordPress versions upto 5.5
+ * Fixed deprecation messages and warnings
+ * Fixed a couple of UI issues
+ * Going forward this plugin will be maintained by <a href="https://SudarMuthu.com">Sudar Muthu</a>
 = 0.2.1.2 =
  * Documentation update and test against 3.5
 = 0.2.1.1 =
